@@ -1,0 +1,1 @@
+# Simple and lightweight boilerplate of FastAPI and MongoDB

@@ -1,0 +1,10 @@
+
+# Environement Variables
+.env
+
+# dependencies
+
+# misc
+**/.DS_Store
+**/git
+**/__pycache__
