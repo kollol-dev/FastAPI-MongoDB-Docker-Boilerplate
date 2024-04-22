@@ -9,8 +9,6 @@ from core.dependencies.log import Log
 from core.routes import router
 from core.config import config
 
-app = FastAPI()
-
 def init_routers(app_: FastAPI) -> None:
     app_.include_router(router)
     
