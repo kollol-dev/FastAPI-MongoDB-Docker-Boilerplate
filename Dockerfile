@@ -9,5 +9,3 @@ RUN apt-get update \
     && apt-get clean
 
 RUN pip install --no-cache-dir --upgrade -r /requirements.txt
-
-COPY . .
