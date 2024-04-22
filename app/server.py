@@ -10,7 +10,7 @@ from core.routes import router
 from core.config import config
 
 def init_routers(app_: FastAPI) -> None:
-    app_.include_router(router)
+    app_.include_router(router, prefix="/v1")
     
 
 def create_app() -> FastAPI:
@@ -25,8 +25,6 @@ def create_app() -> FastAPI:
         # middleware=make_middleware(),
     )
     init_routers(app_=app_)
-    # init_listeners(app_=app_)
-    # init_cache()
     return app_
 
 app = create_app()
